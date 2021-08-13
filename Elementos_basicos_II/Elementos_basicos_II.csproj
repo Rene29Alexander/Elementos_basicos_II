@@ -47,7 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arreglos.cs" />
+    <Compile Include="Colecciones.cs" />
     <Compile Include="Ejercicio_practica.cs" />
+    <Compile Include="Ejercicio_practica_sort.cs" />
+    <Compile Include="Ejercico_diccionario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

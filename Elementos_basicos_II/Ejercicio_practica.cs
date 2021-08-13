@@ -10,6 +10,9 @@ namespace Elementos_basicos_II
     {
         private string[] nombres;
         private float[] notas;
+        int suma, promedio, si;
+
+
         public void Cargar()
         {
             nombres = new string[10];
@@ -22,19 +25,15 @@ namespace Elementos_basicos_II
                 string linea;
                 linea = Console.ReadLine();
                 notas[i] = float.Parse(linea);
-
-
+                si = int.Parse(linea);
+                suma = suma + si;
+                promedio = suma / 10;
 
             }
 
-
-            
-            for (int i = 0; i < notas.Length; i++)
-            {
-                Console.WriteLine("Nota {0}: {1}", i, notas[i]); 
-            }
 
         }
+        
 
 
         public void nota_mayor()
@@ -51,8 +50,9 @@ namespace Elementos_basicos_II
                     pos = i;
                 }
             }
-            Console.WriteLine("El alumno con la mayor nota es " + nombres[pos]);
-            Console.WriteLine("Tiene una nota de:" + mayor);
+            Console.WriteLine("El alumno con la mayor nota es: " + nombres[pos]);
+            Console.WriteLine("Tiene una nota de: " + mayor);
+            Console.WriteLine("el promedio de todas las notas es: " + promedio);
             Console.ReadKey();
         }
 

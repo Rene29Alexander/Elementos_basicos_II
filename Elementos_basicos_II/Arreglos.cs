@@ -22,6 +22,12 @@ namespace Elementos_basicos_II
 
             }
 
+
+            // ordenar elarreglo
+            Array.Sort(notas); //el metodo sort de la clase Array permite ordenar los elementos de un array unidimencional
+            Console.WriteLine("Array ordenado con el metodooS sort()");
+            Array.Reverse(notas); // permite inverir
+
             //recorrer el arreglo de notas
             for (int i = 0; i < notas.Length; i++)
             {
